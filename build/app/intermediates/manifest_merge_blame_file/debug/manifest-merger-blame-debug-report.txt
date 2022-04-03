@@ -1,106 +1,72 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.dokano"
+3    package="com.example.flutter_auth"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="20"
-9        android:targetSdkVersion="31" />
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
 10    <!--
 11         Flutter needs it to communicate with the running application
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\bishn\Development\dokano\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\bishn\Development\dokano\android\app\src\debug\AndroidManifest.xml:6:22-64
-15
-16    <manifest
-16-->C:\Users\bishn\Development\dokano\android\app\src\main\AndroidManifest.xml:1:1-30:12
-17        xmlns:android="http://schemas.android.com/apk/res/android"
-17-->C:\Users\bishn\Development\dokano\android\app\src\main\AndroidManifest.xml:1:11-69
-18        package="com.pinkesh.google_maps_flutter" >
-18-->C:\Users\bishn\Development\dokano\android\app\src\main\AndroidManifest.xml:1:70-98
-19        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-20        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-21
-22        <application
-23            android:name="android.app.Application"
-24            android:icon="@mipmap/ic_launcher"
-25            android:label="dokano" >
-26            <activity
-27                android:name="com.example.dokano.MainActivity"
-28                android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-29                android:exported="true"
-30                android:hardwareAccelerated="true"
-31                android:launchMode="singleTop"
-32                android:theme="@style/LaunchTheme"
-33                android:windowSoftInputMode="adjustResize" >
-34
-35                <!--
-36                 Specifies an Android theme to apply to this Activity as soon as
-37                 the Android process has started. This theme is visible to the user
-38                 while the Flutter UI initializes. After that, this theme continues
-39                 to determine the Window background behind the Flutter UI.
-40                -->
-41                <meta-data
-42                    android:name="io.flutter.embedding.android.NormalTheme"
-43                    android:resource="@style/NormalTheme" />
-44                <meta-data
-45                    android:name="com.google.android.geo.API_KEY"
-46                    android:value="AIzaSyBh_qspmrKDMf_3pVjEjsmKb0VZmELwV-Q" />
-47
-48                <intent-filter>
-49                    <action android:name="android.intent.action.MAIN" />
-50
-51                    <category android:name="android.intent.category.LAUNCHER" />
-52                </intent-filter>
-53            </activity>
-54            <!--
-55             Don't delete the meta-data below.
-56             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-57            -->
-58            <meta-data
-59                android:name="flutterEmbedding"
-60                android:value="2" />
-61        </application>
-62    </manifest> <!-- Include required permissions for Google Maps API to run. -->
-63    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-63-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\bishn\.gradle\caches\transforms-3\dc0c6418f9c728e342299d703a87057d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
-63-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\bishn\.gradle\caches\transforms-3\dc0c6418f9c728e342299d703a87057d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
-64
-65    <uses-feature
-65-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\bishn\.gradle\caches\transforms-3\dc0c6418f9c728e342299d703a87057d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
-66        android:glEsVersion="0x00020000"
-66-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\bishn\.gradle\caches\transforms-3\dc0c6418f9c728e342299d703a87057d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
-67        android:required="true" />
-67-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\bishn\.gradle\caches\transforms-3\dc0c6418f9c728e342299d703a87057d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
-68
-69    <application
-70        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-70-->[androidx.core:core:1.6.0] C:\Users\bishn\.gradle\caches\transforms-3\251056c5b6401c0731b1748cade49bbc\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
-71        android:debuggable="true" >
-72
-73        <!-- Needs to be explicitly declared on P+ -->
-74        <uses-library
-75            android:name="org.apache.http.legacy"
-76            android:required="false" />
-77
-78        <activity
-78-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\bishn\.gradle\caches\transforms-3\55d6933a94d4fbda06140d7c2110e612\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-79            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-79-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\bishn\.gradle\caches\transforms-3\55d6933a94d4fbda06140d7c2110e612\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-80            android:exported="false"
-80-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\bishn\.gradle\caches\transforms-3\55d6933a94d4fbda06140d7c2110e612\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-81            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-81-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\bishn\.gradle\caches\transforms-3\55d6933a94d4fbda06140d7c2110e612\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-82
-83        <meta-data
-83-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\bishn\.gradle\caches\transforms-3\0ba9aa3fc407d0bfbe44e21baaec4afd\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-84            android:name="com.google.android.gms.version"
-84-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\bishn\.gradle\caches\transforms-3\0ba9aa3fc407d0bfbe44e21baaec4afd\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-85            android:value="@integer/google_play_services_version" />
-85-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\bishn\.gradle\caches\transforms-3\0ba9aa3fc407d0bfbe44e21baaec4afd\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-86    </application>
-87
-88</manifest>
+14-->C:\Users\bishn\Desktop\dokano\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\bishn\Desktop\dokano\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <!--
+16     io.flutter.app.FlutterApplication is an android.app.Application that
+17         calls FlutterMain.startInitialization(this); in its onCreate method.
+18         In most cases you can leave this as-is, but you if you want to provide
+19         additional functionality it is fine to subclass or reimplement
+20         FlutterApplication and put your custom class here.
+21    -->
+22    <application
+22-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:8:5-29:19
+23        android:name="io.flutter.app.FlutterApplication"
+23-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:9:9-57
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.6.0] C:\Users\bishn\.gradle\caches\transforms-3\032c58922bb38a99adf98a8b0941b4fc\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:11:9-43
+27        android:label="flutter_auth" >
+27-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:10:9-37
+28        <activity
+28-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:12:9-23:20
+29            android:name="com.example.flutter_auth.MainActivity"
+29-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:13:13-41
+30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+30-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:16:13-163
+31            android:hardwareAccelerated="true"
+31-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:17:13-47
+32            android:launchMode="singleTop"
+32-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:14:13-43
+33            android:theme="@style/LaunchTheme"
+33-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:15:13-47
+34            android:windowSoftInputMode="adjustResize" >
+34-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:18:13-55
+35            <intent-filter>
+35-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:19:13-22:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:20:17-68
+36-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:20:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:21:17-76
+38-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:21:27-74
+39            </intent-filter>
+40        </activity>
+41        <!--
+42             Don't delete the meta-data below.
+43             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+44        -->
+45        <meta-data
+45-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:26:9-28:33
+46            android:name="flutterEmbedding"
+46-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:27:13-44
+47            android:value="2" />
+47-->C:\Users\bishn\Desktop\dokano\android\app\src\main\AndroidManifest.xml:28:13-30
+48    </application>
+49
+50</manifest>
